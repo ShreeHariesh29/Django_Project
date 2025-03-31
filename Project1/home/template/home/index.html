@@ -4,5 +4,14 @@
     <h1> {{ title }} </h1>
     <h1> {{title | truncatewords:1 }}</h1>
     <h1>{{ title | length }}</h1>
+    <h1>Here is the Generated Data </h1>
+    {% if data %}
+    {% for data in data %}
+    <h1>{{data}}</h1>
+    {% endfor %}
+    {% else %}
+       <p>No data available</p>
+    {% endif %}
+    
 {% endblock %}
 

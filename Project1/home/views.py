@@ -4,7 +4,8 @@ from django.http import HttpResponse
 
 def home(request):
     title = "Django Practice pro"
-    return render(request, "home/index.html", {"title" : title})
+    data = []
+    return render(request, "home/index.html", {"title" : title, "data": data})
     # return HttpResponse("Welcome to Home Page !")
     # return render(request, 'home/home.html')
 
